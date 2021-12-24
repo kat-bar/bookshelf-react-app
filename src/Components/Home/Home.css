@@ -1,0 +1,72 @@
+.Home {
+
+}
+
+.Home .button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead {
+    color: white;
+    background-color: goldenrod;
+}
+
+tr:nth-of-type(2n) {
+    background: #f4f4f4;
+}
+
+thead tr {
+    border-width: 2px;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+th,
+td {
+    height: 50px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+td:hover,
+td:focus {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+td {
+    color: #222;
+}
+
+tbody > tr > td > button {
+    padding: 10px 15px;
+    border: 0;
+    background-color: rgb(200, 90, 90);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}

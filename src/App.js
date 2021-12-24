@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react'
+import Login from "./Components/Login/Login";
+import Home from "./Components/Home/Home";
+import app from "./base";
 import './App.css';
 
 function App() {
+    const [user, setUser] = useState(null);
+
+    useEffect(() => {
+        app.auth().onAuthStateChanged(user => {
+            setUser(user);
+        })
+    }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {user ? <Home user={user} /> : <Login />}
     </div>
   );
 }

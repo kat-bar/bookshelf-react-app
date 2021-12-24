@@ -1,0 +1,14 @@
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(121,9,59,0.6119398442970938) 0%, rgba(0,212,255,1) 100%);
+}
+
+.Login > .button {
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
